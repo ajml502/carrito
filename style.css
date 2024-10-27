@@ -1,0 +1,159 @@
+/** @format */
+
+:root {
+  --color-text-general: #ba4e37;
+  --color-title: #261109;
+  --color-boton-agregar: #c83b0f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fdf8f5;
+  width: 100%;
+  height: 100%;
+}
+
+/* main */
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.main {
+  padding-top: 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.container__content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+}
+
+/* Section de card */
+
+.section__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.section__card {
+  display: flex;
+  flex-direction: column;
+}
+.card__img-boton {
+  position: relative;
+}
+
+.card__first--img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card__a a {
+  /* padding: 13px 35px 13px 35px; */
+  width: 170px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 33px;
+  text-align: center;
+  position: absolute;
+  bottom: -15px;
+  left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-boton-agregar);
+  gap: 10px;
+  color: var(--color-title);
+  font-weight: 600;
+  font-size: 17px;
+}
+
+/* Boton activo */
+
+.card__a--modi a {
+  background-color: #c83b0e;
+  padding: 0;
+  width: 170px;
+  height: 45px;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.card__a--modi a img {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 3px;
+  width: 18px;
+  height: 18px;
+}
+
+/*card__img--modi */
+.card__img--modi img {
+  border: 2px solid #c83b0e;
+}
+
+.card__text {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: var(--color-title);
+  font-weight: 600;
+}
+
+.card__text span:first-child {
+  color: #b2a4a1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card__text span:last-child {
+  color: var(--color-boton-agregar);
+}
+
+/* Section Pay */
+
+.section__container__pay {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.section__pay {
+  background-color: #fff;
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: -35px;
+}
+
+/* Section pay agregar items */
+
+.section__pay h2 {
+  color: var(--color-boton-agregar);
+  font-weight: bold;
+}
+.pay__img__text {
+  text-align: center;
+  color: #caaeaa;
+  font-weight: 600;
+  margin-top: 30px;
+}
