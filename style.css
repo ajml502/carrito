@@ -27,6 +27,7 @@ body {
 h1 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 .main {
@@ -142,7 +143,8 @@ h1 {
   border-radius: 10px;
   padding: 20px;
   position: absolute;
-  top: -35px;
+  top: -55px;
+  margin-left: 45px;
 }
 
 /* Section pay agregar items */
@@ -156,4 +158,108 @@ h1 {
   color: #caaeaa;
   font-weight: 600;
   margin-top: 30px;
+}
+
+/* Item pagar */
+
+.item__name__remove {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.item__name__container {
+  margin-bottom: 8px;
+  margin-top: 1.5rem;
+}
+.item__name__container__title {
+  color: var(--color-title);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item__name__container__price {
+  padding-bottom: 20px;
+}
+
+.item__name__container__price span {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #9b9b9b;
+}
+.item__name__container__price span:first-child {
+  color: var(--color-boton-agregar);
+  font-weight: bold;
+}
+
+.item__name__container__price span:last-child {
+  color: #9a8383;
+  font-weight: bold;
+}
+
+.item__remove img {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #caafa7;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.item__total__cantidad {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+.item__total__cantidad span:first-child {
+  font-size: 16px;
+  color: #756d6b;
+}
+
+.item__total__cantidad span:last-child {
+  font-size: 23px;
+  color: #250d08;
+  font-weight: bold;
+}
+
+/* delivery */
+
+.delivery__container {
+  padding-top: 1.5rem;
+}
+
+.delivery__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #fdf8f5;
+  padding: 15px 0 15px 0;
+  border-radius: 10px;
+  color: #514947;
+}
+
+.delivery__items span {
+  font-weight: bold;
+  color: #250d08;
+}
+
+/* Boton pagar */
+
+.bottom__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.botton__item {
+  padding: 20px 0 20px 0px;
+  background-color: var(--color-boton-agregar);
+  width: 100%;
+  text-align: center;
+  border-radius: 33px;
+  color: #fff;
+  font-weight: bold;
 }
