@@ -2,7 +2,7 @@
 
 :root {
   --color-text-general: #ba4e37;
-  --color-title: #261109;
+  --color-title: #36291e;
   --color-boton-agregar: #c83b0f;
 }
 
@@ -10,7 +10,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Red Hat Text", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 a {
   text-decoration: none;
@@ -28,18 +30,42 @@ h1 {
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-weight: bold;
+  color: var(--color-title);
 }
 
 .main {
-  padding-top: 2rem;
   max-width: 1300px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1320px) {
+  .main {
+    padding: 2rem;
+  }
 }
 
 .container__content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .container__content {
+    grid-template-columns: 2fr 1.3fr;
+  }
+}
+
+@media screen and (max-width: 1006px) {
+  .container__content {
+    grid-template-columns: 2.3fr 1.3fr;
+  }
+}
+
+@media screen and (max-width: 957px) {
+  .container__content {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Section de card */
@@ -115,7 +141,7 @@ h1 {
   flex-direction: column;
   gap: 7px;
   color: var(--color-title);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .card__text span:first-child {
@@ -145,6 +171,12 @@ h1 {
   position: absolute;
   top: -55px;
   margin-left: 45px;
+}
+
+@media screen and (max-width: 1275px) {
+  .section__pay {
+    width: 350px;
+  }
 }
 
 /* Section pay agregar items */
